@@ -500,10 +500,10 @@ transition: all .5s ease;
     flex-wrap: row;
     text-align: left;
 }
-.footer .container .sec {
+.footer .container {
     margin-right: 30px;
 }
-.footer .container .sec.aboutus {
+.footer .container .sec_aboutus {
     width: 40%;
 }
 .footer .container h2 {
@@ -566,20 +566,20 @@ transition: all .5s ease;
     height: 80px;
     margin-top: 10px;
 }
-.quickLinks {
+.sec_quickLinks {
     position: relative;
     width: 25%;
 }
-.quickLinks ul li {
+.sec_quickLinks ul li {
     list-style: none;
 }
-.quickLinks ul li a {
+.sec_quickLinks ul li a {
     color: #999;
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
 }
-.quickLinks ul li a:hover {
+.sec_quickLinks ul li a:hover {
     color: #fff;
 }
 
@@ -609,6 +609,9 @@ transition: all .5s ease;
 .contact .info li a:hover {
     color: #fff;
 }
+.map,.phone,.mail {
+    color: white;
+}
 .copyright {
     width: 100%;
     background: #181818;
@@ -625,23 +628,26 @@ transition: all .5s ease;
     #menu-utama .stat-content .card {
         width: 100%;
     }
-    .footer {
-        padding: 50px 50px ;
+    #footer {
+        padding: 10px ;
     }
-    .quickLinks {
+    /* #footer .sec_quickLinks {
         margin-left: -40px;
-    }
-    .footer .container {
+    } */
+    #footer .container {
         flex-direction: column;
     }
-    .footer .container .sec {
+    /* .footer .container .sec {
         margin-right: 0;
         margin-bottom: 40px;
         margin-left: -70px;
-    }
-    .footer .container .sec.aboutus {
-        width: 100%;
-    }
+    } */
+    /* .footer .container .sec_aboutus {
+        width: 100%; */
+    
+
+}
+/* @media (max-width: 690px) {
 
 }
 @media (max-width: 690px) {
@@ -649,7 +655,4 @@ transition: all .5s ease;
 }
 @media (max-width: 690px) {
 
-}
-@media (max-width: 690px) {
-
-}
+} */

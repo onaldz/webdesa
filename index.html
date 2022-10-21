@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body >
 
@@ -19,13 +20,13 @@
             <div class="logo">
                 <img class="logo-img" src="img/Logo.png" alt="profile-logo">
                  <a class="logo-name" href="#">Desa Pangi</a></div>
-            <ul class="menu">
-                <li><a class="Beranda" href="#">Beranda</a></li>
-                <li><a class="Tentang" href="#">Tentang</a></li>
-                <li><a class="layanan" href="#statistik">Layanan</a></li>
-                <li><a class="Kontak" href="#footer">Kontak</a></li>
-                <li><a class="informasi" href="#">informasi</a></li>
-            </ul>
+                <ul class="menu">
+                    <li><a class="Beranda" href="#">Beranda</a></li>
+                    <li><a class="Tentang" href="#">Tentang</a></li>
+                    <li><a class="layanan" href="#statistik">Layanan</a></li>
+                    <li><a class="Kontak" href="#footer">Kontak</a></li>
+                    <li><a class="informasi" href="#">informasi</a></li>
+                </ul>
 
     <!--Start Responsive-->
             <div class="menu-btn">
@@ -144,47 +145,49 @@
         <div class="max-width">
             <h2 class="title">DATA STATISTIK DESA</h2>
             <div class="stat-content">
-                <div class="card"> 
-                    <a href="#">
-                    <div class="box">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div class="text">Data Pendidikan</div>
-                    </div></a>
-                </div>
-                <div class="card"> 
-                    <a href="#">
-                    <div class="box">
-                        <i class="fas fa-briefcase"></i>
-                        <div class="text">Data Pekerjaan</div>
-                    </div></a>
-                </div>
-                <div class="card"> 
-                    <a href="#">
-                    <div class="box">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <div class="text">Data Wilayah</div>
-                    </div></a>
-                </div>
-                <div class="card"> 
-                    <a href="#">
-                    <div class="box">
-                        <i class="fas fa-star-and-crescent"></i>
-                        <div class="text">Data Agama</div>
-                    </div></a>
-                </div>
-                <div class="card"> 
-                    <a href="#">
-                    <div class="box">
-                        <i class="fas fa-stopwatch-20"></i>
-                        <div class="text">Data Usia</div>
-                    </div></a>
-                </div>
-                <div class="card"> 
-                    <a href="#">
-                    <div class="box">
-                        <i class="fas fa-venus-mars"></i>
-                        <div class="text">Jenis Kelamin</div>
-                    </div></a>
+                <div class="carousel owl-carousel">
+                    <div class="card"> 
+                        <a href="#">
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="text">Data Pendidikan</div>
+                        </div></a>
+                    </div>
+                    <div class="card"> 
+                        <a href="#">
+                        <div class="box">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="text">Data Pekerjaan</div>
+                        </div></a>
+                    </div>
+                    <div class="card"> 
+                        <a href="#">
+                        <div class="box">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="text">Data Wilayah</div>
+                        </div></a>
+                    </div>
+                    <div class="card"> 
+                        <a href="#">
+                        <div class="box">
+                            <i class="fas fa-star-and-crescent"></i>
+                            <div class="text">Data Agama</div>
+                        </div></a>
+                    </div>
+                    <div class="card"> 
+                        <a href="#">
+                        <div class="box">
+                            <i class="fas fa-stopwatch-20"></i>
+                            <div class="text">Data Usia</div>
+                        </div></a>
+                    </div>
+                    <div class="card"> 
+                        <a href="#">
+                        <div class="box">
+                            <i class="fas fa-venus-mars"></i>
+                            <div class="text">Jenis Kelamin</div>
+                        </div></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,12 +280,12 @@
     <!--footer-->
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="sec aboutus">
+            <div class="sec_aboutus">
                 <h2>Desa Pangi</h2>
                 <img class="logo-foot" src="img/Logo.png" alt="">
                 <p>Kecamatan Sangtombolang <br> Kabupaten Bolaang Mondondow <br> Sulawesi Utara 95762</p>
             </div>
-            <div class="sec quickLinks">
+            <div class="sec_quickLinks">
                 <h2>Link Cepat</h2>
                 <ul>
                     <li><a href="#">Beranda</a></li>
@@ -293,20 +296,20 @@
                     <li><a href="#">Admin OpenSID</a></li>
                 </ul>
             </div>
-            <div class="sec contact">
+            <div class="sec_contact">
                 <h2>Contact Info</h2>
                 <ul class="info">
                     <li>
-                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="map"><i class="fas fa-map-marker-alt"></i></span>
                         <p>Jl.Trans Sulawesi <br>
                         Desa Pangi Kec.Sangtombolang,Kab.Bolaang Mongondow 95762 Sulawesi Utara <br>Indonesia</p>
                     </li>
                     <li>
-                        <span><i class="fas fa-phone-alt"></i></span>
+                        <span class="phone"><i class="fas fa-phone-alt"></i></span>
                         <p><a href="#">+62 852-4017-8137</a></p>
                     </li>
                     <li>
-                        <span><i class="fa fa-envelope"></i></span>
+                        <span class="mail"><i class="fa fa-envelope"></i></span>
                         <p><a href="mailto:onaldlumowa@gmail.com">onaldlumowa@gmail.com</a></p>
                     </li>
                 </ul>
@@ -320,12 +323,12 @@
         </div>  
     </footer>
     <div class="copyright">
-        <p>Copyright @ 2021 <a href="">DevBol. </a>All right Reserved.</p>
+        <p>Copyright @ 2021 <a href="">Pangi Smart </a>All right Reserved.</p>
     </div>
         
 
     
     <script src="js/script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

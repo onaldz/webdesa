@@ -631,28 +631,7 @@ transition: all .5s ease;
     #footer {
         padding: 10px ;
     }
-    /* #footer .sec_quickLinks {
-        margin-left: -40px;
-    } */
     #footer .container {
         flex-direction: column;
     }
-    /* .footer .container .sec {
-        margin-right: 0;
-        margin-bottom: 40px;
-        margin-left: -70px;
-    } */
-    /* .footer .container .sec_aboutus {
-        width: 100%; */
-    
-
 }
-/* @media (max-width: 690px) {
-
-}
-@media (max-width: 690px) {
-
-}
-@media (max-width: 690px) {
-
-} */

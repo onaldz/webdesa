@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Pangi</title>
+    <link rel="stylesheet" href="/assets/css/data_usia.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/e32a180089.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</head>
+<body >
+
+    <!--navbar---->
+    <nav class="navbar" id="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <img class="logo-img" href="/index.html" src="/assets/img/Logo.png" alt="profile-logo">
+                 <a class="logo-name" href="/index.html">DESA PANGI</a></div>
+                <ul class="menu">
+                    <li><a class="Beranda" href="/">Beranda</a></li>
+                    <li><a class="Tentang" href="#">Tentang</a></li>
+                    <li><a class="layanan" href="#statistik">Layanan</a></li>
+                    <li><a class="Kontak" href="#footer">Kontak</a></li>
+                    <li><a class="informasi" href="#">informasi</a></li>
+                </ul>
+
+    <!--Start Responsive-->
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add charset -->
+    <div class="graphBox">
+        <div class="box">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="box">
+            <canvas id="earning"></canvas>
+        </div>
+    </div>
+
+    <div class="details">
+        <!-- order details list -->
+            <div class="recentOrders">
+                <div class="cardHeader">
+                    <h2>DATA USIA</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Usia</td>
+                            <td>Jumlah</td>
+                            <td>Persentase</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1-4 Tahun</td>
+                            <td>500</td>
+                            <td>10%</td>
+                            <td><span class="status delivered">Up To Date</span></td>
+                        </tr>
+                        <tr>
+                            <td>5-12 Tahun</td>
+                            <td>1000</td>
+                            <td>20%</td>
+                            <td><span class="status return">Old</span></td>
+                        </tr>
+                        <tr>
+                            <td>13-16 Tahun</td>
+                            <td>1200</td>
+                            <td>30%</td>
+                            <td><span class="status delivered">Up To Date</span></td>
+                        </tr>
+                        <tr>
+                            <td>17-22 Tahun</td>
+                            <td>1700</td>
+                            <td>35%</td>
+                            <td><span class="status delivered">Up To Date</span></td>
+                        </tr>
+                        <tr>
+                            <td>23-30 Tahun</td>
+                            <td>800</td>
+                            <td>12%</td>
+                            <td><span class="status inprogress">Old</span></td>
+                        </tr>
+                        <tr>
+                            <td>31-40 Tahun</td>
+                            <td>1000</td>
+                            <td>10%</td>
+                            <td><span class="status inprogress">Old</span></td>
+                        </tr>
+                        <tr>
+                            <td>41-50 Tahun</td>
+                            <td>700</td>
+                            <td>45%</td>
+                            <td><span class="status pending">update</span></td>
+                        </tr>
+                        <tr>
+                            <td>51-60 Tahun</td>
+                            <td>400</td>
+                            <td>40%</td>
+                            <td><span class="status pending">Update</span></td>
+                        </tr>
+                        <tr>
+                            <td>61-70 Tahun</td>
+                            <td>200</td>
+                            <td>20%</td>
+                            <td><span class="status pending">Update</span></td>
+                        </tr>
+                        <tr>
+                            <td>71-80 Tahun</td>
+                            <td>50</td>
+                            <td>5%</td>
+                            <td><span class="status delivered">Up To Date</span></td>
+                        </tr>
+                        <tr>
+                            <td>81-85 Tahun</td>
+                            <td>20</td>
+                            <td>2%</td>
+                            <td><span class="status delivered">Up To Date</span></td>
+                        </tr>
+                        <tr>
+                            <td>86-95 Tahun</td>
+                            <td>10</td>
+                            <td>1%</td>
+                            <td><span class="status delivered">Up To Date</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- New Customers -->
+            <div class="recentCustomers">
+                <div class="cardHeader">
+                    <h2>Usia Berdasarkan Kelamin</h2>
+                </div>
+                <div class="box">
+                    <canvas id="linechart"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+    <!--footer-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="sec_aboutus">
+                <h2>Desa Pangi</h2>
+                <img class="logo-foot" src="/assets/img/Logo.png" alt="">
+                <p>Kecamatan Sangtombolang <br> Kabupaten Bolaang Mondondow <br> Sulawesi Utara 95762</p>
+            </div>
+            <div class="sec_quickLinks">
+                <h2>Link Cepat</h2>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Berita Desa</a></li>
+                    <li><a href="#">Statistik Desa</a></li>
+                    <li><a href="#">Surat Online</a></li>
+                    <li><a href="#">Informasi Desa</a></li>
+                    <li><a href="#">Admin OpenSID</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span class="map"><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Jl.Trans Sulawesi <br>
+                        Desa Pangi Kec.Sangtombolang,Kab.Bolaang Mongondow 95762 Sulawesi Utara <br>Indonesia</p>
+                    </li>
+                    <li>
+                        <span class="phone"><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="#">+62 852-4017-8137</a></p>
+                    </li>
+                    <li>
+                        <span class="mail"><i class="fa fa-envelope"></i></span>
+                        <p><a href="mailto:onaldlumowa@gmail.com">onaldlumowa@gmail.com</a></p>
+                    </li>
+                </ul>
+                <ul class="socialme">
+                    <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="twitt"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="yt"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+            </div>  
+        </div>  
+    </footer>
+    <div class="copyright">
+        <p>Copyright @ 2021 <a href="">Pangi Smart </a>All right Reserved.</p>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="/assets/js/data_usia.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
